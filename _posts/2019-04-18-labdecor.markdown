@@ -1,25 +1,45 @@
 ---
 layout: post
-title:  "Labdecor tool with elixir and powershell"
+title:  "Labdecor with elixir and powershell"
 date:   2019-04-18 00:01:05 +0530
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h2><b>The Problem</b> </h2>
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+![Where it all started!](/assets/2019_04_18_01.png)
 
-Jekyll also offers powerful support for code snippets:
+<br>
 
-{% highlight elixir %}
-def print_hi(name)
-  IO.puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+* ***Adding color to vscode's titlebar manually for every project is cumbersome.***
+
+<br>
+![This is cumbersome](/assets/2019_04_18_03.png)
+
+Inside `settings.json` 
+{% highlight json %}
+{
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#f9f48b",
+		"titleBar.inactiveBackground": "#f9f48b"
+	}
+}
 {% endhighlight %}
 
-<!-- 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk]. -->
+  * ***Tried creating vscode plugin ([vscode api reference](https://code.visualstudio.com/api)). But left that due to some partner id complications.***
+<br>
+
+<h2><b> Back to the Labs </b></h2>
+ * ***Decided to build a command-line tool, that generates/modifies settings.json file and add color customizations***
+ * ***This time Elixir from the tool box.***
+ * ***And finally Powershell for converting the tool as a global command***
+
+<h1> <b>Why Elixir?</b> </h1>
+ * ***I am learning elixir***
+ * ***Elixir have a tool [escript](https://elixirschool.com/en/lessons/advanced/escripts) with which we can create executables with an erlang VM as the sole dependency.***
+
+<h1> <b>Building Labdecor (An Elixir executable) to be continued..</b> </h1>
+
+
 
 <!-- [jekyll-docs]: https://jekyllrb.com/docs/home -->
 [jekyll-gh]:   https://github.com/madclaws
