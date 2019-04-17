@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "taming erlang!"
+title:  "yo jesse pinkman!"
 date:   2019-01-18 17:26:05 +0530
 categories: jekyll update
 ---
