@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Labdecor with elixir and powershell"
+title:  "Labdecor with elixir"
 date:   2019-04-18 00:01:05 +0530
 categories: jekyll update
 ---
@@ -31,7 +31,7 @@ Inside `settings.json`
 <h2><b> Back to the Labs </b></h2>
  * ***Decided to build a command-line tool, that generates/modifies settings.json file and add color customizations***
  * ***This time Elixir from the tool box.***
- * ***And finally Powershell for converting the tool as a global command***
+ <!-- * ***And finally Powershell for converting the tool as a global command*** -->
 
 <h1> <b>Why Elixir?</b> </h1>
  * ***I am learning elixir***
