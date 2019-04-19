@@ -37,9 +37,45 @@ Inside `settings.json`
  * ***I am learning elixir***
  * ***Elixir have a tool [escript](https://elixirschool.com/en/lessons/advanced/escripts) with which we can create executables with an erlang VM as the sole dependency.***
 
-<h1> <b>Building Labdecor (An Elixir executable) to be continued..</b> </h1>
+<h1> <b>Building Labdecor (An Elixir executable)</b> </h1>
+* Creating a mix app.
+	`mix new labdecor` (labdecor is app's name)
+* `cd` into `labdecor` directory
+* Modify `mix.exs` .
+	* Add new escript property and the callback function (that should execute when we call escript) in `project` function.
+	
+		```
+			def project do
+				[
+					app: :labdecor,
+					version: "0.1.0",
+					elixir: "~> 1.8",
+					escript: escript_config(),
+					start_permanent: Mix.env() == :prod,
+					deps: deps()
+				]
+			end
+			#escript_config() is the function that run on calling escript.
+		```
 
+	* In `escript_config()`, we need to define the main_module of the escript.
 
+		```
+		defp escript_config() do
+			[main_module: Labdecor]
+		end
+		```
+
+	* Goto **lib** -> **labdecor.ex**
+		* A `main(_)` with argument is must, this is the entry function.
+		* I have 3 functions inside `main()`. 
+			* `create_folder()` -> Creates the **.vscode** folder, if not exists.
+			* `get_color_code(code_length, inital_character)` -> Creates hex color code from a list of chars
+			* `write_settings_file(color_value)` -> Write to settings.json file.
+	* run `mix escript.build` to build the executable.
+	
+	<br>
+	**[Github Code link](https://github.com/madclaws/labdecor)**
 
 <!-- [jekyll-docs]: https://jekyllrb.com/docs/home -->
 [jekyll-gh]:   https://github.com/madclaws
