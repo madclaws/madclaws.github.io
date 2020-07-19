@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Here lies my experiments.
+Here lies experiments.
 <!-- [jekyllrb.com](https://jekyllrb.com/) -->
 
 You can find me here
