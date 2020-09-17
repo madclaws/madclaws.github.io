@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Confusion with for"
+date:   2020-09-17 14:17:05 +0530
+categories: jekyll update
+---
+<h2><b>Ending my confusion with different for's in js</b> </h2>
+
+<h3><b>for..in</b></h3>
+   Used to iterate object keys
+<h3><b>for..of</b></h3>
+  Used to iterate values of an Enumerable, such as arrays, strings.
+
+[jekyll-gh]:   https://github.com/madclaws
