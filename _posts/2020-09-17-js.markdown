@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Confusion with for"
+title:  "JS stuff"
 date:   2020-09-17 14:17:05 +0530
 categories: jekyll update
 ---
