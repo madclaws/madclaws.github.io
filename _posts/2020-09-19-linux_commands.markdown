@@ -13,5 +13,7 @@ categories: jekyll update
   ``` lsof -p <PID> | grep cwd ```
 <h4><b>Killing a process</b></h4>
   ``` kill <PID> ```
+<h4><b>Copying a folder</b></h4>
+  ``` cp -avr /tmp/conf/ /tmp/backup/ ```
 
 [jekyll-gh]:   https://github.com/madclaws
