@@ -9,11 +9,11 @@ categories: jekyll update
    ``` lsof -i :<PORT> ```
 <h4><b>Location of the running process</b></h4>
   ``` lsof -p <PID> | grep cwd ```
-<h4><b>Location of the running process</b></h4>
-  ``` lsof -p <PID> | grep cwd ```
 <h4><b>Killing a process</b></h4>
   ``` kill <PID> ```
 <h4><b>Copying a folder</b></h4>
   ``` cp -avr /tmp/conf/ /tmp/backup/ ```
+<h4><b>Removing files older than X days</b></h4>
+  ``` find <path>/*.log -mtime +X -exec rm {} \;  ```
 
 [jekyll-gh]:   https://github.com/madclaws
